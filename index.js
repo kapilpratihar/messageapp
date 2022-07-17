@@ -29,5 +29,6 @@ io.on('connection',socket=>{
 });
 
 })
-server.listen(3000);
-console.log("app is running at port 3000");
+const port=process.env.PORT;
+server.listen(port);
+console.log("app is running at port ",port);
